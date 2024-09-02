@@ -1,0 +1,13 @@
+.emailbox {
+    background-color: aqua;
+    border-style: solid;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.passwordbox {
+    background-color: aqua;
+    border-style: solid;
+    color: black;
+border-radius: 5px;
+}
