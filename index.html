@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mylogin.css">
-    <title>login</title>
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
+    <div class="form-container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <button class="tab-button active" id="login-tab">Login</button>
+                <button class="tab-button" id="register-tab">Register</button>
+            </div>
+            <div class="form-content">
+                <form id="login-form" class="form active">
+                    <h2>Login</h2>
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
 
-    <input class="emailbox" type="email" placeholder="Email" required> <br>
-
-    <input class="passwordbox" id="Password" type="password" placeholder="password" required> <br>
-
-    <input id="passcheck" type="checkbox" > <label> show password</label>
-    
-    <input class="submitbutton" type="submit"><br>
-
-    </form>
-
-
-<script>
-
-
-
-</script>
-
+                <form id="register-form" class="form">
+                    <h2>Register</h2>
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" name="username" required>
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="email" required>
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" name="password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
